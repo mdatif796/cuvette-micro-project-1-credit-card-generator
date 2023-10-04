@@ -1,5 +1,7 @@
+import Home from "./Home";
+
 function App() {
-  return <div>Credit Card Generator</div>;
+  return <Home />;
 }
 
 export default App;

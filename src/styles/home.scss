@@ -1,0 +1,20 @@
+.home-container {
+  height: 100vh;
+  display: flex;
+
+  .left {
+    width: 30%;
+    height: 100%;
+    background-image: url("../assets/leftDiv.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

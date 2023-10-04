@@ -1,0 +1,68 @@
+.form {
+  display: block;
+  width: max(350px, 35%);
+  margin-left: 150px;
+
+  label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+    font-weight: 700;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    border: 0.7px solid gray;
+    border-radius: 8px;
+    outline-offset: 0.7px;
+    color: gray;
+  }
+
+  .expiry-cvc-container {
+    display: flex;
+    justify-content: space-between;
+
+    .expiry-date-container {
+      width: 48%;
+
+      input {
+        width: 48%;
+      }
+
+      #date {
+        margin-right: 4%;
+      }
+    }
+
+    .cvc-container {
+      width: 48%;
+    }
+  }
+  button {
+    width: 100%;
+    padding: 12px 0;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  p {
+    color: #f81212;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+}
