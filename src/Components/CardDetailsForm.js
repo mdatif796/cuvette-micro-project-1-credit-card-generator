@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/CardDetailsForm.scss";
 
-const CardDetailsFrom = () => {
+const CardDetailsForm = ({ handleDetailsChange }) => {
   const [formInput, setFormInput] = useState({
     name: "",
     cardNumber: "",
@@ -117,6 +117,7 @@ const CardDetailsFrom = () => {
     }
 
     console.log("successfully submitted");
+    handleDetailsChange(formInput);
     setError({ ...errMsg });
     setFormInput({
       name: "",
@@ -187,4 +188,4 @@ const CardDetailsFrom = () => {
   );
 };
 
-export default CardDetailsFrom;
+export default CardDetailsForm;

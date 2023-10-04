@@ -1,0 +1,63 @@
+.card-front-container {
+  position: absolute;
+  width: 437px;
+  height: 226px;
+  top: 13%;
+  left: 10%;
+  border-radius: 10px;
+  padding: 20px 25px;
+  background-image: url("../assets/cardFront.png");
+  background-size: cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  .circle {
+    display: flex;
+    align-items: center;
+
+    .fill-circle {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      margin-right: 20px;
+    }
+
+    .empty-circle {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 0.8px solid #ffffff;
+    }
+  }
+
+  .card-number {
+    margin-top: 70px;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 23px;
+  }
+
+  .name-and-expiry {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+
+    .name {
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .expiry {
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+  }
+}
