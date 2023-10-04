@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/CardDetailsForm.scss";
+import { toast } from "react-toastify";
 
 const CardDetailsForm = ({ handleDetailsChange }) => {
   const [formInput, setFormInput] = useState({
@@ -116,7 +117,7 @@ const CardDetailsForm = ({ handleDetailsChange }) => {
       return;
     }
 
-    console.log("successfully submitted");
+    toast.success("credit card created !!");
     handleDetailsChange(formInput);
     setError({ ...errMsg });
     setFormInput({
